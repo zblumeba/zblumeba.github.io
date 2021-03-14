@@ -1,0 +1,174 @@
+header img{
+    float:left;
+    margin: 0px 20px 15px 20px
+}
+
+header>h2{
+    font-size: 250%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 10px
+}
+
+header>h3{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+header{
+    border-bottom: 4px solid black;
+    background-image: linear-gradient(45deg, white, orange, black);
+    padding: 15px 0px 0px 0px;
+}
+
+
+body{
+    width:800px;
+    background: white;
+    margin: auto;
+    border: 3px solid black ;
+    box-shadow: 0px 5px 20px 15px black;
+    
+}
+
+main{
+	height: 350px;
+    margin: 10px 40px 10px 40px;
+}
+
+
+main>h1{
+	margin-top: 30px;
+    font-size: 150%;
+}
+
+main>h2{
+    font-size: 130%;
+}
+main>img{
+	float: left;
+	margin: 0px 50px 0px 0px;
+}
+
+#product_links a{
+	color: black;
+}
+#product_links a:hover{
+	color: green;
+}
+
+footer{
+	
+    border-top: 4px solid black;
+    text-align: center;
+    background-image: linear-gradient(45deg, black, orange, white);
+    padding: 0px 0px 5px 0px;
+}
+
+
+html{
+
+    background: url("../images/bats.gif") repeat;
+}
+
+#side_menu{
+	
+	width: 160px;
+	height: 350px;
+	float: left;
+	margin: 20px 10px 0px 0px;
+}
+
+#product_links{
+	background-color: #ffdd99;
+	width: 200px;
+	height: 390px;
+	float: right;
+	margin: 0px 0px 0px 0px;
+}
+
+#product_links >h3{
+	font-size: 100%
+}
+
+#product_links ul li{
+	list-style: none;
+	margin-left: 20px;
+
+}
+
+#side_menu a{
+	font-weight: bold;
+}
+
+nav, ul, li, a {
+  padding: 0 0;
+  margin: 0 0
+}
+
+#side_menu ul li{
+	list-style: none;
+}
+
+#side_menu ul li a{
+	
+	display: block;
+	width: 100px;
+	color: black;
+	background-color: orange;
+	padding: 7px 0px 7px 5px;
+	text-decoration: none;
+	margin: 10px 0px 10px 30px;
+	border: 2px solid black;
+}
+
+#nav_menu ul {
+	list-style: none;
+	position: relative;
+
+	
+}
+
+#nav_menu ul li a{
+	text-align: center;
+	display: block;
+	width: 160px;
+	color: white;
+	background-color: black;
+	padding: 15px 0 15px 0;
+	text-decoration: none;
+
+}
+
+
+#nav_menu ul li a:hover{
+	background-color: gray;
+}
+
+#nav_menu ul li{
+	float: left;
+}
+
+#nav_menu ul ul{
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+
+#nav_menu ul ul li{
+	float: none;
+}
+
+#nav_menu ul li:hover >ul{
+	display: block;
+}
+
+#nav_menu > ul::after{
+	content: "";
+	display: block;
+	clear: both;
+} 
+
+#nav_menu a.cat {
+	color: orange;
+}
