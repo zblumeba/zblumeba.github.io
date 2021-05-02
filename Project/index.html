@@ -1,0 +1,117 @@
+<! Zane Blume-Babcock>
+<! CSCI 4970>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Blackjack Games</title>
+	<link rel="shortcut icon" href="images/aces.png">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="blackjack.js"></script>
+
+	
+	<div id = "scoreboard">
+		<ul id = "score">
+			<li><p>Wins: </p> <p id= "wins"> ""</p> </li>
+			<li><p>Losses: </p> <p id= "losses"> ""</p> </li>
+		</ul>
+	</div>
+	
+</head>
+
+<body>
+
+<main>
+
+	<div class = "game">
+		<h1>Blackjack</h1>
+		
+		
+		
+		<div id="playfield">
+			<h2 id = "opponentTitle">Opponent</h2>
+			<div id = "points1"> <p> Dealer Points:  <p id= "opponentPoints"> ""</p> </p> </div>
+			
+			
+			<div id = "opponent" class = "hand">
+				<ul id="card_list">
+					<li><img id = "spot1" class = "card" src="images/JD.png" alt=""></li>
+					<li><img id = "spot2" class = "card" src="images/JD.png" alt=""></li>
+					<li><img id = "spot3" class = "card" src="images/JD.png" alt=""></li>
+					<li><img id = "spot4" class = "card" src="images/JD.png" alt=""></li>
+					<li><img id = "spot5" class = "card" src="images/JD.png" alt=""></li>
+					<li><img id = "spot6" class = "card" src="images/JD.png" alt=""></li>
+					<li><img id = "spot7" class = "card" src="images/JD.png" alt=""></li>
+					<li><img id = "spot8" class = "card" src="images/JD.png" alt=""></li>
+					
+				</ul>
+			</div>
+		
+		
+	
+		
+		
+			<h2 id = "playerTitle">Player</h2>
+			<div id = "points2" ><p>Player Points:  <p id= "playerPoints"> ""</p> </p> </div>
+			
+			<div id = "player" class = "hand">
+				<ul id="card_list">
+					<li><img id = "spot9" class = "card" src="images/JD.png" alt=""></li>
+					<li><img id = "spot10" class = "card" src="images/JD.png" alt=""></li>
+					<li><img id = "spot11" class = "card" src="images/JD.png" alt=""></li>
+					<li><img id = "spot12" class = "card" src="images/JD.png" alt=""></li>
+					<li><img id = "spot13" class = "card" src="images/JD.png" alt=""></li>
+					<li><img id = "spot14" class = "card" src="images/JD.png" alt=""></li>
+					<li><img id = "spot15" class = "card" src="images/JD.png" alt=""></li>
+					<li><img id = "spot16" class = "card" src="images/JD.png" alt=""></li>        
+				</ul>
+			</div>
+			
+		</div>
+
+	
+	   
+		<div>
+			<img id = "deck" src="images/blue_back.png" alt="">
+			<img id = "dealt_card" src="images/blue_back.png" alt="">
+		</div>
+		
+	
+	
+		
+	
+	</div>
+	
+	<h2 id = "message"> error!</h2>
+
+	<div id="button_panel">
+		
+			<div id="deal_button" class="button_panel">
+					<p>Deal</p></div>
+					
+			<div id="hit_button" class="button_panel">
+					<p>Hit</p></div>
+					
+			<div id="stand_button" class="button_panel">
+					<p>Stand</p></div>	
+					
+			<div id="split_button" class="button_panel">
+					<p>Split</p></div>
+					
+			<div id="reset_button" class="button_panel">
+					<p>Play Again</p></div>
+		
+	</div>
+	
+	</div>
+	
+</main>
+
+
+</body>
+
+</html>

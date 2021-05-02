@@ -1,0 +1,184 @@
+img {
+	height: 150px;
+ }
+
+
+h1 {
+	margin: 20px;
+	
+}
+	
+#card_list {
+    position: relative;
+    left: 0px;           
+    width: 900px;
+    list-style: none; 
+}
+	
+#card_list li { 
+    float: left;
+    width: 100px; 
+}
+	
+#card_list li img { 
+    width: 95px; 
+}
+
+#deal_button{
+	
+	background: teal;
+}
+
+#hit_button{
+	display: none;
+	background: teal;
+}
+
+#stand_button{
+	display: none;
+	background: green;
+}
+
+#split_button{
+	display: none;
+	background: red;
+}
+
+#reset_button{
+	display: none;
+	background: blue;
+}
+
+#message{
+	display: none;
+	background: red;
+	font-size: 20;
+	color: white;
+	width: 400px;
+	margin-left: 350px;
+	
+}
+.card{
+	display: none;
+	
+}
+
+#playfield{
+    width: 800px;
+	padding: 50px;
+    height: 450px; 
+	background-color: DarkGreen;
+	min-height: 100%;
+	margin: 100px;
+}
+	
+#playfield > li{
+	padding: 50px;
+    height: 25px; 
+}
+
+#opponentTitle {
+	position: absolute;
+	top: 150px;
+	left: 120px;
+}
+
+#playerTitle {
+	position: absolute;
+	top: 400px;
+	left: 120px;
+}
+
+#opponent{
+	position: absolute;
+	top: 200px;
+	left: 120px;
+}
+
+#player{
+	position: absolute;
+	top: 450px;
+	left: 120px;
+}
+
+#score{
+	float: right;
+	margin: 30px;
+}
+#scoreboard ul{
+	list-style: none;
+	position: relative;
+}
+
+#scoreboard ul li{
+	float: left;
+	margin: 0px;
+}
+
+#scoreboard ul li p{
+	text-align: center;
+	display: block;
+	width: 160px;
+	color: white;
+	background-color: black;
+	padding: 15px 0 15px 0;
+	text-decoration: none;
+	font-weight: normal;  
+	margin: 0px;
+}
+
+#button_panel {
+	position: absolute;
+	left: 300px;
+}
+
+#button_panel ul {
+	list-style: none;
+	position: relative;
+}
+
+#button_panel  div p{
+	text-align: center;
+	display: block;
+	width: 100px;
+	padding: 15px 15px 15px 15px;
+	text-decoration: none;
+	font-weight: normal;  
+	border: 30px 30px 30px 30px;
+}
+
+#button_panel  div{
+	float: left;
+	color: white;
+	text-align: center;
+	text-shadow: gray 1px 1px;
+}
+
+#points1 {
+	position: absolute;
+	top: 150px;
+	left: 900px;
+}
+
+#points2 {
+	position: absolute;
+	top: 400px;
+	left: 900px;
+}
+
+
+#deck{
+	position: absolute;
+	left: 1100px;
+	top: 350px;
+	
+}
+
+#dealt_card{
+	display: none;
+	position: absolute;
+	
+	left: 1100px;
+	top: 350px;
+}
+
