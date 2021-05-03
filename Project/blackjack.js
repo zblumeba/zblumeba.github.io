@@ -281,44 +281,56 @@ $(document).ready(function() {
 		//because of the hidden card (call updatePoints with dealerRevealed == true)
 		updatePoints(true);
 		
+		//Reveal the first card spot, dealers hidden card
+		displayCards(true);
 		
 		//Since there is only one player, the dealer doesnt need to draw if they are
-		//already beating the player. Only draw if dealer points are lower than player
-		if(opponentPoints < playerPoints)
-			while(opponentPoints < 18){
-				
-				//If total is 17, check for "soft 17". If yes, draw a card. 
-				//If no, end the loop, since the dealer must have a hard 17
-				if(opponentPoints == 17){
-					var aceCheck = false;
-					
-					for (var i = 0; i < opponentHand.length; i++){
-						var rank = opponentHand[i].slice(0,1);
-						if(rank == 'A'){
-							aceCheck = true;
-						}		
-					}
-					
-					if(aceCheck) {
-						var card2 = deck.pop();
-						opponentHand.push(card2);
-						animateCard(false, true, displayCards);
-						updatePoints(true);
-					}else
-						break;
-				} 
-				
-				
-				//If the total was less than 18, and not exactly 17, draw
-				//a card, since the total must be 16 or lower.
-				var card2 = deck.pop();
-				opponentHand.push(card2);
-				animateCard(false, true, displayCards);
-				updatePoints(true);
-			}		
+		//already beating the player. Only draw if dealer points are less than or 
+		//equal to player points
+		while(opponentPoints < 18 && opponentPoints <= playerPoints){
 			
-		updatePoints(true);
-		compare();
+			//If total is 17, check for "soft 17". If yes, draw a card. 
+			//If no, end the loop, since the dealer must have a hard 17
+			if(opponentPoints == 17){
+				var aceCheck = false;
+				
+				for (var i = 0; i < opponentHand.length; i++){
+					var rank = opponentHand[i].slice(0,1);
+					if(rank == 'A'){
+						aceCheck = true;
+					}		
+				}
+				
+				if(aceCheck) {
+					var card2 = deck.pop();
+					opponentHand.push(card2);
+					animateCard(false, true, displayCards);
+					updatePoints(true);
+				}else
+					break;
+			} 
+			
+			
+			//If the total was less than 18, and not exactly 17, draw
+			//a card, since the total must be 16 or lower.
+			var card2 = deck.pop();
+			opponentHand.push(card2);
+			animateCard(false, true, displayCards);
+			updatePoints(true);
+		}
+			
+		//If the dealer has drawn new cards on their turn, they should be animated
+		if(opponentHand.length > 2){			
+		animateCard(false, true, function(){
+			displayCards(true);
+			updatePoints(true);
+			compare();
+		});
+		}
+		else{
+			updatePoints(true);
+			compare();
+		}
 	}
 	
 	

@@ -4,8 +4,9 @@ img {
 
 
 h1 {
-	margin: 20px;
-	
+	margin: 20px 0px 0px 40px;
+	font-family: "Garamond", "Georgia", serif;
+	font-size: 60px;
 }
 	
 #card_list {
@@ -55,8 +56,8 @@ h1 {
 	font-size: 20;
 	color: white;
 	width: 400px;
-	margin-left: 350px;
-	
+	margin: 0px;
+	margin-left: 355px;
 }
 .card{
 	display: none;
@@ -69,7 +70,9 @@ h1 {
     height: 450px; 
 	background-color: DarkGreen;
 	min-height: 100%;
-	margin: 100px;
+	margin: 60px 100px 100px 100px;
+	border: 10px solid LightGray;
+	border-style: outset;
 }
 	
 #playfield > li{
@@ -129,12 +132,16 @@ h1 {
 
 #button_panel {
 	position: absolute;
-	left: 300px;
+	left: 350px;
+	border: 8px solid gray;
+	width: 400px;
+	height: 100px;
 }
 
 #button_panel ul {
 	list-style: none;
 	position: relative;
+	
 }
 
 #button_panel  div p{
@@ -145,6 +152,8 @@ h1 {
 	text-decoration: none;
 	font-weight: normal;  
 	border: 30px 30px 30px 30px;
+	
+
 }
 
 #button_panel  div{
@@ -152,6 +161,10 @@ h1 {
 	color: white;
 	text-align: center;
 	text-shadow: gray 1px 1px;
+	position: relative;
+	top: 10px;
+	left: 50px;
+	
 }
 
 #points1 {
@@ -182,3 +195,8 @@ h1 {
 	top: 350px;
 }
 
+#spacer{
+	width: 40px;
+	background: white;
+	
+}
